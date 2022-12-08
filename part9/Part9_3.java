@@ -21,7 +21,7 @@ class Player {
         level.showLevelMessage();
     }
 
-    public PlayerLevel gerLevel() {
+    public PlayerLevel getLevel() {
         return level;
     }
 

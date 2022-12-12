@@ -1,5 +1,7 @@
 package part10_2;
 
+import part10_1.Calc;
+
 import java.io.IOException;
 
 public class SchedulerTest {
@@ -18,6 +20,8 @@ public class SchedulerTest {
             scheduler = new LeastJob();
         } else if (ch == 'P' || ch == 'p') {
             scheduler = new PriorityAllocation();
+        } else if (ch == 'A' || ch == 'a') {
+            scheduler = new AgentGetCall();
         } else {
             System.out.println("지원되지 않는 기능입니다.");
             return;

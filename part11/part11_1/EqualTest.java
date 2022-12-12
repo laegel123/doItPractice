@@ -27,6 +27,11 @@ class Student {
 
         return false;
     }
+
+    @Override
+    public int hashCode() {
+        return studentId;
+    }
 }
 
 public class EqualTest {
@@ -58,5 +63,12 @@ public class EqualTest {
         } else {
             System.out.println("studentLee와 studentLee3 동일하지 않습니다.");
         }
+
+        System.out.println("==============");
+        System.out.println("studentLee의 hashCode : " + studentLee.hashCode());
+        System.out.println("studentLee3 hashCode : " + studentLee3.hashCode());
+
+        System.out.println("studentLee의 실제 주소값 : " + System.identityHashCode(studentLee));
+        System.out.println("studentLee3 실제 주소값 : " + System.identityHashCode(studentLee3));
     }
 }

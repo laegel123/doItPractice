@@ -22,6 +22,11 @@ class MyDate {
 
         return false;
     }
+
+    @Override
+    public int hashCode() {
+        return this.year + this.month + this.day;
+    }
 }
 
 public class MyDateTest {

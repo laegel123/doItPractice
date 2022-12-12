@@ -17,6 +17,17 @@ public class Student {
         subject.setScore(score);
         subjectList.add(subject);
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(this.name + " : " + this.studentId + "\n");
+        for (Subject subject : subjectList) {
+            sb.append(subject.name + " : " + subject.score + "\n");
+        }
+
+        return sb.toString();
+    }
 }
 
 class Subject {
@@ -48,5 +59,8 @@ class Main {
         Student student02 = new Student(10001, "student02");
         student02.addSubject("과학", 20);
         student02.addSubject("국어", 100);
+
+        System.out.println(student01);
+        System.out.println(student02);
     }
 }

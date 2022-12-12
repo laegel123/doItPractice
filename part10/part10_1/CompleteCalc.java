@@ -1,3 +1,5 @@
+package part10_1;
+
 public class CompleteCalc extends Calculator{
     @Override
     public int times(int number1, int number2) {
@@ -14,6 +16,6 @@ public class CompleteCalc extends Calculator{
     }
 
     public void showInfo() {
-        System.out.println("Calc 인터페이스를 구현하였습니다.");
+        System.out.println("part10_1.Calc 인터페이스를 구현하였습니다.");
     }
 }

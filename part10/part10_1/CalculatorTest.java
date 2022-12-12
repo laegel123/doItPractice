@@ -1,3 +1,5 @@
+package part10_1;
+
 public class CalculatorTest {
     public static void main(String[] args) {
         int n1 = 10;

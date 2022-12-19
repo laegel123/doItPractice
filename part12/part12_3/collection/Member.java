@@ -1,6 +1,8 @@
 package part12_3.collection;
 
-public class Member {
+import java.util.Comparator;
+
+public class Member implements Comparable<Member> {
     private int memberId;
     private String memberName;
 
@@ -33,6 +35,11 @@ public class Member {
     @Override
     public int hashCode() {
         return memberId;
+    }
+
+    @Override
+    public int compareTo(Member member) {
+        return this.memberName.compareTo(member.memberName) * (-1);
     }
 
     @Override

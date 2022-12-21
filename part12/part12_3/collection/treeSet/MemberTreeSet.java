@@ -5,6 +5,7 @@ import part12_3.collection.Member;
 import java.util.Iterator;
 import java.util.TreeSet;
 
+// treeSet
 public class MemberTreeSet {
     private TreeSet<Member> treeSet;
 

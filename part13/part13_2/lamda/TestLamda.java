@@ -19,6 +19,7 @@ public class TestLamda {
     }
 }
 
+// test
 interface PrintString {
     void showString(String str);
 }

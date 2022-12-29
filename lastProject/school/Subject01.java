@@ -49,4 +49,8 @@ public class Subject01 {
     public void setStudent01List(ArrayList<Student01> student01List) {
         this.student01List = student01List;
     }
+
+    public void register(Student01 student) {
+        student01List.add(student);
+    }
 }

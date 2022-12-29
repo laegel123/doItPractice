@@ -19,6 +19,14 @@ public class School {
         return instance;
     }
 
+    public void addSubject(Subject01 subject) {
+        subject01List.add(subject);
+    }
+
+    public void addStudent(Student01 student) {
+        this.student01List.add(student);
+    }
+
     public ArrayList<Student01> getStudent01List() {
         return student01List;
     }

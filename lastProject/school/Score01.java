@@ -40,7 +40,7 @@ public class Score01 {
     public String toString() {
         return "Score01{" +
                 "id=" + id +
-                ", subject=" + subject +
+                ", subject=" + subject.getName() +
                 ", point=" + point +
                 '}';
     }
